@@ -18,12 +18,12 @@ export default class MainScreen extends Component {
   render() {
     return (
       <View style={styles.menuContainer}>
-        <MenuBlock name='Wallets' onMenuClick={this.walletMenuClick}/>
-        <MenuBlock name='Send' onMenuClick={this.sendmenuClick}/>
-        <MenuBlock name='Assets'onMenuClick={this.assetsMenuClick}/>
-        <MenuBlock name='Trade'onMenuClick={this.tradeMenuClick}/>
-        <MenuBlock name='News'onMenuClick={this.newsMenuClick}/>
-        <MenuBlock name='Settings'onMenuClick={this.settingsMenuClick}/>
+        <MenuBlock name='Wallets' onMenuClick={this.walletMenuClick} iconName='suitcase'/>
+        <MenuBlock name='Send' onMenuClick={this.sendmenuClick} iconName='location-arrow'/>
+        <MenuBlock name='Assets'onMenuClick={this.assetsMenuClick} iconName='credit-card'/>
+        <MenuBlock name='Trade'onMenuClick={this.tradeMenuClick} iconName='balance-scale'/>
+        <MenuBlock name='News'onMenuClick={this.newsMenuClick} iconName='connectdevelop'/>
+        <MenuBlock name='Settings'onMenuClick={this.settingsMenuClick} iconName='cog'/>
       </View>
     );
   }

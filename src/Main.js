@@ -19,11 +19,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#E6E6E6',
-  },
-  header: {
-    fontSize: 80,
-    fontFamily: 'Tangerine',
-    color: '#000000',
+    backgroundColor: '#E6E6E6'
   }
 });

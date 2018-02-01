@@ -43,6 +43,8 @@
 		11CD4A73E5AF418D8261C3F6 /* Tangerine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAFED7E5094B1E942B22AD /* Tangerine-Regular.ttf */; };
 		FDB7E65D2AF7430A8FDEF5EE /* Josefin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F72006D0A4435B9D30B520 /* Josefin.ttf */; };
 		2900B35136034A1892AD73E2 /* Tangerine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF7A0E0D043346E9923E1EF9 /* Tangerine.ttf */; };
+		F37058718DAC4A7D87581A1E /* Josefin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9BAD3097C51475293C77BCD /* Josefin.ttf */; };
+		6221D06ABB7F40A9A6F989E4 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE14648E574D4D66AAE0E458 /* FontAwesome.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,6 +301,8 @@
 		3FDAFED7E5094B1E942B22AD /* Tangerine-Regular.ttf */ = {isa = PBXFileReference; name = "Tangerine-Regular.ttf"; path = "../assets/fonts/Tangerine-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E3F72006D0A4435B9D30B520 /* Josefin.ttf */ = {isa = PBXFileReference; name = "Josefin.ttf"; path = "../assets/fonts/Josefin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		BF7A0E0D043346E9923E1EF9 /* Tangerine.ttf */ = {isa = PBXFileReference; name = "Tangerine.ttf"; path = "../assets/fonts/Tangerine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C9BAD3097C51475293C77BCD /* Josefin.ttf */ = {isa = PBXFileReference; name = "Josefin.ttf"; path = "../src/assets/fonts/Josefin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE14648E574D4D66AAE0E458 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-fa-icons/fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -562,6 +566,8 @@
 				3FDAFED7E5094B1E942B22AD /* Tangerine-Regular.ttf */,
 				E3F72006D0A4435B9D30B520 /* Josefin.ttf */,
 				BF7A0E0D043346E9923E1EF9 /* Tangerine.ttf */,
+				C9BAD3097C51475293C77BCD /* Josefin.ttf */,
+				EE14648E574D4D66AAE0E458 /* FontAwesome.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -964,6 +970,8 @@
 				11CD4A73E5AF418D8261C3F6 /* Tangerine-Regular.ttf in Resources */,
 				FDB7E65D2AF7430A8FDEF5EE /* Josefin.ttf in Resources */,
 				2900B35136034A1892AD73E2 /* Tangerine.ttf in Resources */,
+				F37058718DAC4A7D87581A1E /* Josefin.ttf in Resources */,
+				6221D06ABB7F40A9A6F989E4 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

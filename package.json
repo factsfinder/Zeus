@@ -7,11 +7,14 @@
     "test": "jest"
   },
   "rnpm": {
-    "assets": ["./src/assets/fonts/"]
- },
+    "assets": [
+      "./src/assets/fonts/"
+    ]
+  },
   "dependencies": {
     "react": "16.2.0",
-    "react-native": "0.52.2"
+    "react-native": "0.52.2",
+    "react-native-fa-icons": "^3.0.1"
   },
   "devDependencies": {
     "babel-jest": "22.1.0",

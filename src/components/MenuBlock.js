@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {View, Alert, Text, StyleSheet, TouchableNativeFeedback} from 'react-native';
+import Icon from 'react-native-fa-icons';
 
-const MenuBlock = ({onMenuClick, name}) => {
+const MenuBlock = ({onMenuClick, name, iconName}) => {
   return (
     <TouchableNativeFeedback onPress={onMenuClick}>
       <View style={styles.menuBlock}>
+        <Icon name={iconName} style={styles.iconStyles}/>
         <Text style={styles.menuText}>{name}</Text>
       </View>
     </TouchableNativeFeedback>
@@ -29,6 +31,10 @@ const styles = StyleSheet.create({
     fontSize: 28,
     textAlign: 'center',
     fontFamily: 'Josefin'
+  },
+  iconStyles: {
+    fontSize: 25,
+    color: '#000000'
   }
 })
 
