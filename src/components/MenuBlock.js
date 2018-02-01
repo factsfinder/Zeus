@@ -1,18 +1,14 @@
 import React, {Component} from 'react';
 import {View, Alert, Text, StyleSheet, TouchableNativeFeedback} from 'react-native';
 
-export default class MenuBlock extends Component {
-  render() {
-    return (
-      <TouchableNativeFeedback onPress={this.props.onMenuClick}>
-        <View style={styles.menuBlock}>
-          <Text style={styles.menuText}>
-            {this.props.name}
-          </Text>
-        </View>
-      </TouchableNativeFeedback>
-    );
-  }
+const MenuBlock = ({onMenuClick, name}) => {
+  return (
+    <TouchableNativeFeedback onPress={onMenuClick}>
+      <View style={styles.menuBlock}>
+        <Text style={styles.menuText}>{name}</Text>
+      </View>
+    </TouchableNativeFeedback>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -35,3 +31,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Josefin'
   }
 })
+
+export default MenuBlock;

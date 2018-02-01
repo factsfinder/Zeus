@@ -8,19 +8,21 @@ export default class MainScreen extends Component {
     this.state = {}
   }
 
-  walletMenuClick = () => {}
-  sendmenuClick = () => {}
+  walletMenuClick   = () => {}
+  sendmenuClick     = () => {}
   settingsMenuClick = () => {}
-  tradeMenuClick = () => { Alert.alert('Coming Soon..!'); }
-
-  render(){
+  tradeMenuClick    = () => Alert.alert('Coming Soon..!'); 
+  newsMenuClick     = () => {}
+  assetsMenuClick   = () => {}
+  
+  render() {
     return (
       <View style={styles.menuContainer}>
         <MenuBlock name='Wallets' onMenuClick={this.walletMenuClick}/>
         <MenuBlock name='Send' onMenuClick={this.sendmenuClick}/>
-        <MenuBlock name='Assets'onMenuClick={this.tradeMenuClick}/>
-        <MenuBlock name='Trade'onMenuClick={this.settingsMenuClick}/>
-        <MenuBlock name='ICOs'onMenuClick={this.settingsMenuClick}/>
+        <MenuBlock name='Assets'onMenuClick={this.assetsMenuClick}/>
+        <MenuBlock name='Trade'onMenuClick={this.tradeMenuClick}/>
+        <MenuBlock name='News'onMenuClick={this.newsMenuClick}/>
         <MenuBlock name='Settings'onMenuClick={this.settingsMenuClick}/>
       </View>
     );
