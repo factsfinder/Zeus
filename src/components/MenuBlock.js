@@ -7,7 +7,6 @@ export default class MenuBlock extends Component {
       <TouchableNativeFeedback onPress={this.props.onMenuClick}>
         <View style={styles.menuBlock}>
           <Text style={styles.menuText}>
-            {this.props.icon}
             {this.props.name}
           </Text>
         </View>
@@ -21,17 +20,18 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    width: 150, 
-    height: 150, 
+    width: 135, 
+    height: 135, 
     backgroundColor: '#FFFFFF',
     shadowColor: '#000000',
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10
+    margin: 10,
+    elevation: 5,
+    borderRadius: 5
   },
   menuText: {
     color: '#000000',
-    fontSize: 24,
-    textAlign: 'center'
+    fontSize: 28,
+    textAlign: 'center',
+    fontFamily: 'Josefin'
   }
 })

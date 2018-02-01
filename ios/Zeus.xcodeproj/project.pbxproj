@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -37,6 +36,13 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		1526740B3CBA4C30A65AD1B6 /* Tangerine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDAC21A00FE41BC95B7C292 /* Tangerine.ttf */; };
+		DAB5A2E69CE54373BF8CD739 /* JosefinSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF5589C926E4AEBA9976870 /* JosefinSlab-Regular.ttf */; };
+		BCF7E87DD8904419AFBC242D /* Tangerine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F7E55A7239F4287832DF696 /* Tangerine-Regular.ttf */; };
+		793BF1DD7BB748F4B7E1E06B /* JosefinSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269D2E7304AB477484C9A125 /* JosefinSlab-Regular.ttf */; };
+		11CD4A73E5AF418D8261C3F6 /* Tangerine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAFED7E5094B1E942B22AD /* Tangerine-Regular.ttf */; };
+		FDB7E65D2AF7430A8FDEF5EE /* Josefin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F72006D0A4435B9D30B520 /* Josefin.ttf */; };
+		2900B35136034A1892AD73E2 /* Tangerine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF7A0E0D043346E9923E1EF9 /* Tangerine.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +292,13 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		4CDAC21A00FE41BC95B7C292 /* Tangerine.ttf */ = {isa = PBXFileReference; name = "Tangerine.ttf"; path = "../src/assets/fonts/Tangerine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2FF5589C926E4AEBA9976870 /* JosefinSlab-Regular.ttf */ = {isa = PBXFileReference; name = "JosefinSlab-Regular.ttf"; path = "../src/assets/fonts/JosefinSlab-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1F7E55A7239F4287832DF696 /* Tangerine-Regular.ttf */ = {isa = PBXFileReference; name = "Tangerine-Regular.ttf"; path = "../src/assets/fonts/Tangerine-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		269D2E7304AB477484C9A125 /* JosefinSlab-Regular.ttf */ = {isa = PBXFileReference; name = "JosefinSlab-Regular.ttf"; path = "../assets/fonts/JosefinSlab-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FDAFED7E5094B1E942B22AD /* Tangerine-Regular.ttf */ = {isa = PBXFileReference; name = "Tangerine-Regular.ttf"; path = "../assets/fonts/Tangerine-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E3F72006D0A4435B9D30B520 /* Josefin.ttf */ = {isa = PBXFileReference; name = "Josefin.ttf"; path = "../assets/fonts/Josefin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BF7A0E0D043346E9923E1EF9 /* Tangerine.ttf */ = {isa = PBXFileReference; name = "Tangerine.ttf"; path = "../assets/fonts/Tangerine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -512,6 +525,7 @@
 				00E356EF1AD99517003FC87E /* ZeusTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				C555DD820F564A2E88A5C6AD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -537,6 +551,21 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		C555DD820F564A2E88A5C6AD /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				4CDAC21A00FE41BC95B7C292 /* Tangerine.ttf */,
+				2FF5589C926E4AEBA9976870 /* JosefinSlab-Regular.ttf */,
+				1F7E55A7239F4287832DF696 /* Tangerine-Regular.ttf */,
+				269D2E7304AB477484C9A125 /* JosefinSlab-Regular.ttf */,
+				3FDAFED7E5094B1E942B22AD /* Tangerine-Regular.ttf */,
+				E3F72006D0A4435B9D30B520 /* Josefin.ttf */,
+				BF7A0E0D043346E9923E1EF9 /* Tangerine.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -619,7 +648,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -928,6 +957,13 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				1526740B3CBA4C30A65AD1B6 /* Tangerine.ttf in Resources */,
+				DAB5A2E69CE54373BF8CD739 /* JosefinSlab-Regular.ttf in Resources */,
+				BCF7E87DD8904419AFBC242D /* Tangerine-Regular.ttf in Resources */,
+				793BF1DD7BB748F4B7E1E06B /* JosefinSlab-Regular.ttf in Resources */,
+				11CD4A73E5AF418D8261C3F6 /* Tangerine-Regular.ttf in Resources */,
+				FDB7E65D2AF7430A8FDEF5EE /* Josefin.ttf in Resources */,
+				2900B35136034A1892AD73E2 /* Tangerine.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import MainMenu from './src/Menus/MainMenu';
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <MainMenu />
-      </View>
+        <View style={styles.container}>
+          <Text style={styles.header}>Zeus</Text>
+          <View><MainMenu/></View>
+        </View>
     );
   }
 }
@@ -19,12 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#E6E6E6',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  menuView: {
-    width: 150
+  header: {
+    fontSize: 80,
+    fontFamily: 'Tangerine',
+    color: '#000000',
   }
 });

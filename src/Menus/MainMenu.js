@@ -18,7 +18,9 @@ export default class MainScreen extends Component {
       <View style={styles.menuContainer}>
         <MenuBlock name='Wallets' onMenuClick={this.walletMenuClick}/>
         <MenuBlock name='Send' onMenuClick={this.sendmenuClick}/>
-        <MenuBlock name='Trade'onMenuClick={this.tradeMenuClick}/>
+        <MenuBlock name='Assets'onMenuClick={this.tradeMenuClick}/>
+        <MenuBlock name='Trade'onMenuClick={this.settingsMenuClick}/>
+        <MenuBlock name='ICOs'onMenuClick={this.settingsMenuClick}/>
         <MenuBlock name='Settings'onMenuClick={this.settingsMenuClick}/>
       </View>
     );
@@ -29,19 +31,6 @@ const styles = StyleSheet.create({
   menuContainer: {
     justifyContent: 'center',
     flexDirection: 'row',
-    flexWrap: 'wrap'
-  },
-  menuBlock: {
-    width: 150, 
-    height: 150, 
-    backgroundColor: '#FFFFFF',
-    shadowColor: '#000000',
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10
-  },
-  menuText: {
-    color: '#000000',
-    fontSize: 24,
+    flexWrap: 'wrap',
   }
 })
