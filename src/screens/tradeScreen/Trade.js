@@ -4,14 +4,14 @@ import {
   Text, View, StatusBar
 } from 'react-native';
 
-export default class WalletScreen extends Component {
+export default class TradeScreen extends Component {
   static naviagationOptions = {
-    title: 'WalletScreen'
+    title: 'TadeScreen'
   };
   render(){
     return (
       <View>
-        <Text> This is where you will check your wallet balance and all..!</Text>
+        <Text> Trade Cypto..! Coming Soon..!</Text>
     </View>
     );
   }

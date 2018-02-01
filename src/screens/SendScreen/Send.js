@@ -4,14 +4,14 @@ import {
   Text, View, StatusBar
 } from 'react-native';
 
-export default class WalletScreen extends Component {
+export default class SendScreen extends Component {
   static naviagationOptions = {
-    title: 'WalletScreen'
+    title: 'SendScreen'
   };
   render(){
     return (
       <View>
-        <Text> This is where you will check your wallet balance and all..!</Text>
+        <Text> Send XLM,,!</Text>
     </View>
     );
   }

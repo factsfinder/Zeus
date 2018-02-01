@@ -4,14 +4,14 @@ import {
   Text, View, StatusBar
 } from 'react-native';
 
-export default class WalletScreen extends Component {
+export default class AssetsScreen extends Component {
   static naviagationOptions = {
-    title: 'WalletScreen'
+    title: 'AssetsScreen'
   };
   render(){
     return (
       <View>
-        <Text> This is where you will check your wallet balance and all..!</Text>
+        <Text> Trust Assets..!</Text>
     </View>
     );
   }

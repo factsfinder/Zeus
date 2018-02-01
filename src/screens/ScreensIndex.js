@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import MainScreen from './Main';
-import WalletScreen from './Wallet';
-import NewsScreen from './News';
-import SettingScreen from './Setting';
 
-export default {MainScreen, WalletScreen, NewsScreen, SettingScreen};
+import WalletScreen from './walletsScreen/Wallet';
+import SettingScreen from './settingsScreen/Settings';
+import NewsScreen from './newsScreen/News';
+import TradeScreen from './tradeScreen/Trade';
+import SendScreen from './SendScreen/Send';
+import AssetsScreen from './assetsScreen/Assets';

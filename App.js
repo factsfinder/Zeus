@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import { AppRegistry ,StyleSheet, Text, View, Settings } from 'react-native';
 import Main from './src/Main';
 
 export default class App extends Component {

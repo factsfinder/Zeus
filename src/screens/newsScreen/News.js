@@ -5,10 +5,6 @@ import {
 } from 'react-native';
 
 export default class NewsScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
 
   render(){
     return (

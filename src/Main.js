@@ -1,18 +1,44 @@
 import React, { Component } from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { StackNavigator } from 'react-navigation';
+
 import Header from './components/Header';
 import MainMenu from './Menus/MainMenu';
 
-export default class App extends Component {
+import WalletScreen from './screens/walletsScreen/Wallet';
+import SendScreen from './screens//SendScreen/Send';
+import AssetsScreen from './screens/assetsScreen/Assets';
+import TradeScreen from './screens/tradeScreen/Trade';
+import NewsScreen from './screens/newsScreen/News';
+import SettingsScreen from './screens/settingsScreen/Settings';
+
+class Main extends Component {
+
+  static navigationOptions = {
+   header: null
+  };
+
   render() {
     return (
-        <View style={styles.container}>
-          <Header/>
-          <MainMenu/>
-        </View>
+      <View style={styles.container}>
+        <Header/>
+        <MainMenu onMenuClick={(screen) => this.props.navigation.navigate(screen)}/>
+      </View>
     );
   }
 }
+
+export const HomePage =   StackNavigator({
+  Main: {screen: Main},
+  Wallets: {screen: WalletScreen},
+  Send: {screen: SendScreen},
+  Assets: {screen: AssetsScreen},
+  Trade: {screen: TradeScreen},
+  News: {screen: NewsScreen},
+  Settings: {screen: SettingsScreen}
+}, {headerMode: 'screen'});
+
+AppRegistry.registerComponent('HomePage', () => HomePage);
 
 const styles = StyleSheet.create({
   container: {
@@ -22,3 +48,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#E6E6E6'
   }
 });
+
+export default HomePage;
