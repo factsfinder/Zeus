@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet,Text, Alert } from 'react-native';
-import MenuBlock  from '../components/MenuBlock';
+import MenuBlock  from './MenuBlock';
 import { screens } from '../enums/screens';
 
 export default class MainScreen extends Component {
