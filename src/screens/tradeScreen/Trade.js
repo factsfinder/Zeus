@@ -1,18 +1,14 @@
 import React, {Component} from 'react';
-import {
-  StyleSheet,
-  Text, View, StatusBar
-} from 'react-native';
+import { View } from 'react-native';
+import ComingSoon from '../../components/ComingSoon';
 
 export default class TradeScreen extends Component {
-  static navigationOptions = {
-    title: 'Trade XLM'
-  };
-  render(){
+  static navigationOptions = { title: 'Trade XLM' };
+  render() {
     return (
-      <View>
-        <Text> Trade Cypto..! Coming Soon..!</Text>
-    </View>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <ComingSoon infoText='Buy/Sell XLM for other coins..!'/>
+      </View>
     );
   }
 }

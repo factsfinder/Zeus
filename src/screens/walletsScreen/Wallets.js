@@ -14,16 +14,16 @@ export default class WalletScreen extends Component {
   static navigationOptions = { title: 'Your Wallets' };
 
   componentDidMount = () => {}
-
-  getWallets = () => {}
-
+  getWallets        = () => {}
+  createWallet      = () => {}
+  
   render() {
     let walletNum = this.state.walletNum;
     let walletStyles = walletNum > 0 ? styles.walletsContainer: styles.zeroWalletContainer;
     return (
       <View style={walletStyles}>
         {walletNum === 0 ?
-          <ZeroWalletState />
+          <ZeroWalletState createWallet={this.createWallet}/>
         :
           <MultiWalletState />
         }
