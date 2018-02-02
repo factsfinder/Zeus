@@ -5,8 +5,8 @@ import {
 } from 'react-native';
 
 export default class TradeScreen extends Component {
-  static naviagationOptions = {
-    title: 'TadeScreen'
+  static navigationOptions = {
+    title: 'Trade XLM'
   };
   render(){
     return (

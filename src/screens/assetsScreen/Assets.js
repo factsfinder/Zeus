@@ -5,8 +5,8 @@ import {
 } from 'react-native';
 
 export default class AssetsScreen extends Component {
-  static naviagationOptions = {
-    title: 'AssetsScreen'
+  static navigationOptions = {
+    title: 'Trust Assets'
   };
   render(){
     return (

@@ -5,7 +5,9 @@ import {
 } from 'react-native';
 
 export default class NewsScreen extends Component {
-
+  static navigationOptions = {
+    title: 'Stellar News'
+  };
   render(){
     return (
       <View>

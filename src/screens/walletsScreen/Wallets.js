@@ -5,10 +5,10 @@ import {
 } from 'react-native';
 
 export default class WalletScreen extends Component {
-  static naviagationOptions = {
-    title: 'WalletScreen'
+  static navigationOptions = {
+    title: 'Your Wallets'
   };
-  render(){
+  render() {
     return (
       <View>
         <Text> This is where you will check your wallet balance and all..!</Text>

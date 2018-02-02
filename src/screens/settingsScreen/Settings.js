@@ -10,6 +10,10 @@ export default class SettingScreen extends Component {
     this.state = {}
   }
 
+  static navigationOptions = {
+    title: 'Settings'
+  };
+
   render(){
     return (
       <View>

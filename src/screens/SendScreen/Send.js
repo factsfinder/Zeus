@@ -5,8 +5,8 @@ import {
 } from 'react-native';
 
 export default class SendScreen extends Component {
-  static naviagationOptions = {
-    title: 'SendScreen'
+  static navigationOptions = {
+    title: 'Send XLM'
   };
   render(){
     return (

@@ -5,7 +5,7 @@ import { StackNavigator } from 'react-navigation';
 import Header from './components/Header';
 import MainMenu from './Menus/MainMenu';
 
-import WalletScreen from './screens/walletsScreen/Wallet';
+import WalletScreen from './screens/walletsScreen/Wallets';
 import SendScreen from './screens//SendScreen/Send';
 import AssetsScreen from './screens/assetsScreen/Assets';
 import TradeScreen from './screens/tradeScreen/Trade';
@@ -37,8 +37,6 @@ export const HomePage =   StackNavigator({
   News: {screen: NewsScreen},
   Settings: {screen: SettingsScreen}
 }, {headerMode: 'screen'});
-
-AppRegistry.registerComponent('HomePage', () => HomePage);
 
 const styles = StyleSheet.create({
   container: {

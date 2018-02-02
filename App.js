@@ -12,8 +12,10 @@ export default class App extends Component {
   }
 }
 
+AppRegistry.registerComponent('App', () => Main);
+
 const styles = StyleSheet.create({
   AppContainer: {
     flex: 1
   }
-})
+});
