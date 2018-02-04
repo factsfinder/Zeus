@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry ,StyleSheet, Text, View, Settings } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Main from './src/Main';
 
 export default class App extends Component {
@@ -11,8 +11,6 @@ export default class App extends Component {
     );
   }
 }
-
-AppRegistry.registerComponent('App', () => Main);
 
 const styles = StyleSheet.create({
   AppContainer: {
