@@ -1,4 +1,5 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import Zeus from './src/Zeus.js';
+import './shim.js';
 
-AppRegistry.registerComponent('Zeus', () => App);
+AppRegistry.registerComponent('Zeus', () => Zeus);
