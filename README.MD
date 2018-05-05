@@ -12,3 +12,4 @@ After doing npm install, run this command:
   * npm install
   * ./node_modules/.bin/rn-nodeify --hack --install
   * react-native run-android
+  * react-native link
