@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import HomeActivity from './HomeActivity.js';
+import HomeView from './views/HomeView/HomeView.js';
 
 class Zeus extends Component {
   render() {
     return (
-      <View>
-        <HomeActivity />
-      </View>
+      <HomeView />
     );
   }
 }
