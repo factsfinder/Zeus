@@ -37,24 +37,22 @@ class Stellar {
   }
 
   static createAccount() {
-    console.log('creating acount now');
-    const keyPair = Stellar.generateKeyPair();
+    const keyPair = this.generateKeyPair();
     const address = keyPair.address;
     return axios.get('https://friendbot.stellar.org',
       {
         params: {
           addr: address,
-          json: true
         }
       }
-    ).then(() => Stellar.loadAccount(address))
+    ).then(() => this.loadAccount(address))
       .then((accInfo) => accInfo)
       .catch(err => console.log(err));
   }
 
   static loadAccount(address) {
     return stellarServer.loadAccount(address).then(accInfo => {
-      Stellar.setAccountInfo(accInfo);
+      this.setAccountInfo(accInfo);
       return accInfo;
     });
   }

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import Block from '../components/Block.js';
 
-const homeNavOptions = ['History', 'Send', 'Trust', 'Trade', 'Convert', 'Inflation', 'Settings', 'News', 'Logout'];
+const homeNavOptions = ['History', 'Send', 'Assets', 'Effects', 'Trade', 'Convert', 'Inflation', 'Settings', 'Logout'];
 
 const HomeNav = (props) => {
   return (
     <View style={styles.homeNav}>
       {homeNavOptions.map((option, index) => (
-        <Block key={option} blockStyles={styles.homeNavBlock}>
+        <Block key={option} blockStyles={styles.homeNavBlock} onPress={() => props.onNavClick(option)}>
           <Text style={styles.homeNavBlockText}>{option}</Text>
         </Block>
       ))}
@@ -18,6 +18,8 @@ const HomeNav = (props) => {
 
 const styles = StyleSheet.create({
   homeNav: {
+    flex: 1,
+    backgroundColor: '#ffffff',
     padding: 15,
     flexDirection: 'row',
     justifyContent: 'space-around',

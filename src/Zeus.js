@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View } from 'react-native';
-import { Provider } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import rootReducer from './redux/reducer.js';
 import HomeView from './views/HomeView/HomeView.js';
 
-const middleWares = [thunk];
-const Store = createStore(rootReducer, applyMiddleware(...middleWares));
-
-const Zeus = () => (
-  <Provider store={Store}>
-    <HomeView />
-  </Provider>
-);
+const Zeus = (props) => {
+  return (
+    <HomeView 
+      onNavClick={props.onNavClick} 
+      navigateToAccount={props.navigateToAccount}
+    />
+  );
+};
 
 export default Zeus;

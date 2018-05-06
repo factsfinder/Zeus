@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import Icon from 'react-native-fa-icons';
 
-const Header = ({}) => {
+const Header = () => {
   return (
     <View style={styles.header}>
       <Icon name='bolt' style={styles.logo} />
@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#ffffff',
     borderBottomWidth: 1,
-    borderBottomColor: '#00ef61'
+    borderBottomColor: '#00ef61',
+    elevation: 8
   },
 
   title: {

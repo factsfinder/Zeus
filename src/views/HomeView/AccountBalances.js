@@ -4,16 +4,15 @@ import Block from '../components/Block.js';
 
 const AccountBalances = ({ balances }) => {
   const accountBalances = balances && balances.map((balance, index) => (
-    <Text key={index} style={styles.balanceBlockSubText}>
-      {balance.asset_type === 'native' ? 'XLM' : balance.asset_type}: {Math.abs(balance.balance)}
+    <Text key={index} style={styles.balancesText}>
+      {'\u2022'} {balance.asset_type === 'native' ? 'XLM' : balance.asset_type}: {balance.balance}
     </Text>
   ));
   return (
     <Block blockStyles={styles.balanceBlock}>
-      <Text style={styles.balanceBlockText}>Balances: </Text>
       {balances && balances.length > 0
         ? accountBalances
-        : <Text style={styles.balanceBlockSubText}>Loading account balances...</Text>
+        : <Text style={styles.balancesLoadingText}>Loading account balances...</Text>
       }
     </Block>
   );
@@ -27,13 +26,13 @@ const styles = StyleSheet.create({
     shadowColor: '#000000'
   },
 
-  balanceBlockText: {
+  balancesText: {
     fontFamily: 'JosefinSlab-Regular',
-    fontSize: 20,
+    fontSize: 18,
     color: '#ffffff'
   },
 
-  balanceBlockSubText: {
+  balancesLoadingText: {
     fontFamily: 'JosefinSlab-Regular',
     fontSize: 15,
     color: '#ffffff',

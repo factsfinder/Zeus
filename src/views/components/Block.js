@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableNativeFeedback } from 'react-native';
 
 const Block = (props) => {
   return (
-    <TouchableNativeFeedback onPress={props.loadAccount}>
+    <TouchableNativeFeedback onPress={props.onPress}>
       <View style={[styles.block, props.blockStyles]}>
         {props.children}
       </View>

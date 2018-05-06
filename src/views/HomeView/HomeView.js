@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import Stellar from '../../stellar/Stellar.js';
 import { createAccount } from '../../redux/actions.js';
@@ -8,8 +8,7 @@ import HomeNav from './HomeNav.js';
 import AccountBalances from './AccountBalances.js';
 
 class HomeView extends Component {
-  state = {};
-
+  
   componentDidMount() {
     if (Stellar.getAccountInfo() == null) {
       this.props.createAccount();
@@ -22,10 +21,12 @@ class HomeView extends Component {
         <Header />
         <View style={styles.homeInfo}>
           <AccountBalances balances={this.props.balances} />
-          <Text style={styles.viewAccountText}>View your account >></Text>
+          <TouchableOpacity onPress={this.props.navigateToAccount}>
+            <Text style={styles.viewAccountText}>View your account >></Text>
+          </TouchableOpacity>
         </View>
         <View style={styles.homeNavOptions}>
-          <HomeNav />
+          <HomeNav onNavClick={this.props.onNavClick}/>
         </View>
       </View>
     );
