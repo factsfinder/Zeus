@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import Icon from 'react-native-fa-icons';
 
-const Header = ({ }) => {
+const Header = ({}) => {
   return (
     <View style={styles.header}>
       <Icon name='bolt' style={styles.logo} />
@@ -19,15 +19,18 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#00ef61'
   },
+
   title: {
     fontSize: 50,
     fontFamily: 'Tangerine',
     color: '#000000',
+    paddingTop: 5
   },
+
   logo: {
     color: '#000000',
-    fontSize: 40,
-    marginTop: 5,
+    fontSize: 45,
+    paddingTop: 5,
     transform: [
       { rotate: '30deg' }
     ]

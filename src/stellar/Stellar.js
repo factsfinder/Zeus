@@ -15,16 +15,11 @@ let stellarServer = new StellarSdk.Server(testNetwork);
 
 class Stellar {
   constructor() {
-    this.accountInfo = {
-      address: null,
-      balance: 0
-    };
+    this.accountInfo = {};
   }
 
   static generateKeyPair() {
     const keyPair = StellarSdk.Keypair.random();
-    const accountInfo = {...Stellar.getAccountInfo(), address: keyPair.publicKey()};
-    Stellar.setAccountInfo(accountInfo);
     return {
       address: keyPair.publicKey(),
       secret: keyPair.secret()
@@ -52,17 +47,15 @@ class Stellar {
           json: true
         }
       }
-    ).then((res) => {
-      console.log(res);
-      Stellar.loadAccount(address);
-      return res.data
-    }).catch(err => console.log(err));
+    ).then(() => Stellar.loadAccount(address))
+      .then((accInfo) => accInfo)
+      .catch(err => console.log(err));
   }
 
   static loadAccount(address) {
-    const accountAddr = address || this.accountInfo.address;
-    return stellarServer.loadAccount(accountAddr).then(res => {
-      console.log(res);
+    return stellarServer.loadAccount(address).then(accInfo => {
+      Stellar.setAccountInfo(accInfo);
+      return accInfo;
     });
   }
 

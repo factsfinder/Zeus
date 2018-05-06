@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import { connect } from 'react-redux';
 import Stellar from '../../stellar/Stellar.js';
+import { createAccount } from '../../redux/actions.js';
 import Header from '../components/Header.js';
 import HomeNav from './HomeNav.js';
-import Block from '../components/Block.js';
+import AccountBalances from './AccountBalances.js';
 
 class HomeView extends Component {
   state = {};
 
   componentDidMount() {
     if (Stellar.getAccountInfo() == null) {
-      Stellar.createAccount();
+      this.props.createAccount();
     }
   }
 
@@ -19,9 +21,7 @@ class HomeView extends Component {
       <View style={styles.homeContainer}>
         <Header />
         <View style={styles.homeInfo}>
-          <Block blockStyles={styles.balanceBlock}>
-            <Text style={styles.balanceBlockText}>Balances: </Text>
-          </Block>
+          <AccountBalances balances={this.props.balances} />
           <Text style={styles.viewAccountText}>View your account >></Text>
         </View>
         <View style={styles.homeNavOptions}>
@@ -31,6 +31,14 @@ class HomeView extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  balances: state.balances || []
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  createAccount: () => dispatch(createAccount())
+});
 
 const styles = StyleSheet.create({
   homeContainer: {
@@ -49,19 +57,6 @@ const styles = StyleSheet.create({
     paddingBottom: 10
   },
 
-  balanceBlock: {
-    width: 250,
-    height: 120,
-    backgroundColor: '#000000',
-    shadowColor: '#000000'
-  },
-
-  balanceBlockText: {
-    fontFamily: 'JosefinSlab-Regular',
-    fontSize: 20,
-    color: '#ffffff'
-  },
-
   viewAccountText: {
     color: '#000000',
     fontFamily: 'JosefinSlab-Regular',
@@ -73,4 +68,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default HomeView;
+export default connect(mapStateToProps, mapDispatchToProps)(HomeView);
