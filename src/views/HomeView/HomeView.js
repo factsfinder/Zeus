@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import Stellar from '../../stellar/Stellar.js';
-import Header from '../Header.js';
+import Header from '../components/Header.js';
 import HomeNav from './HomeNav.js';
-import Block from '../../components/Block.js';
+import Block from '../components/Block.js';
 
 class HomeView extends Component {
   state = {};

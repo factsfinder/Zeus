@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import Block from '../../components/Block.js';
+import Block from '../components/Block.js';
 
 const homeNavOptions = ['History', 'Send', 'Trust', 'Trade', 'Convert', 'Inflation', 'Settings', 'News', 'Logout'];
 
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     flexWrap: 'wrap',
   },
+
   homeNavBlock: {
     width: 80,
     height: 80,
