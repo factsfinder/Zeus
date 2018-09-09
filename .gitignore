@@ -1,7 +1,7 @@
 # OSX
 #
 .DS_Store
-
+ios/
 # Xcode
 #
 build/
@@ -24,11 +24,13 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
+android/
 build/
 .idea
 .gradle
 local.properties
 *.iml
+.package-lock.json
 
 # node.js
 #
